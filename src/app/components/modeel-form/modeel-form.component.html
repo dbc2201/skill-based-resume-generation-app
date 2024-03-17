@@ -1,1 +1,35 @@
 <p>modeel-form works!</p>
+<p>model-style works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Example</title>
+  <link rel="stylesheet" href="model-style.component.css">
+</head>
+<body>
+  <section class="container py-20 mx-auto">
+    <button id="openModal" class="px-6 py-3 text-base font-medium text-white rounded-full bg-primary">
+      Open Modal
+    </button>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h3>Your Message Sent Successfully</h3>
+      <span class="line"></span>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+      </p>
+      <div class="btn-container">
+        <button id="cancelBtn" class="btn cancel">Cancel</button>
+        <button id="viewDetailsBtn" class="btn view-details">View Details</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="model-style.component.ts"></script>
+</body>
+</html>

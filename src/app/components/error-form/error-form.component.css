@@ -1,0 +1,33 @@
+.error-404 {
+	position: relative;
+	background-color: #a9d3ff;
+	padding: 120px 0;
+	text-align: center;
+  }
+
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+  }
+
+  .content {
+	max-width: 400px;
+	margin: 0 auto;
+	color: #000000;
+  }
+  a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	color: #000000;
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s;
+  }
+
+  a:hover {
+	background-color: #fff;
+	color: #007bff;
+  }
