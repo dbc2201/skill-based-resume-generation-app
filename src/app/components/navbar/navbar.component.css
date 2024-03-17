@@ -1,52 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+/* navbar.component.css */
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="navbar.component.css" />
-  <title>navbar</title>
-</head>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
 
-<body>
-  <nav class="navbar">
-    <!-- LOGO -->
-    <div class="logo">Resume.</div>
+  /* Navbar styles */
+  .navbar {
+	background-color: #333; /* Change this to your desired background color */
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
 
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
+  /* Logo styles */
+  .logo {
+	color: #fff; /* Change this to your desired text color */
+	font-size: 24px;
+  }
 
-      <!-- USING CHECKBOX HACK
-      <input type="checkbox" id="checkbox_toggle" />
-      <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+  /* Navigation links styles */
+  .nav-links {
+	list-style: none;
+	display: flex;
+  }
 
-      <!-- NAVIGATION MENUS -->
-      <div class="menu">
+  .nav-links li {
+	margin-right: 20px;
+  }
 
-        <li><a href="D:\24-DATA\project 2\skill-based-resume-generation-app\src\index.html">Home</a></li>
-        <li><a href="/">About</a></li>
+  .nav-links li a {
+	text-decoration: none;
+	color: #fff; /* Change this to your desired text color */
+	font-size: 16px;
+  }
 
-        <li class="services">
-          <a href="/">Services</a>
+  /* Dropdown menu styles */
+  .dropdown {
+	display: none;
+	position: absolute;
+	background-color: #333; /* Change this to your desired background color */
+	padding: 10px;
+  }
 
-          <!-- DROPDOWN MENU -->
-          <ul class="dropdown">
-            <li><a href="/">Dropdown 1 </a></li>
-            <li><a href="/">Dropdown 2</a></li>
-            <li><a href="/">Dropdown 2</a></li>
-            <li><a href="/">Dropdown 3</a></li>
-            <li><a href="/">Dropdown 4</a></li>
-          </ul>
+  .services:hover .dropdown {
+	display: block;
+  }
 
-        </li>
+  .dropdown li {
+	margin: 5px 0;
+  }
 
-        <li><a href="/">Pricing</a></li>
-        <li><a href="/">Contact</a></li>
-		<li><a href="D:\24-DATA\project 2\skill-based-resume-generation-app\src\app\components\sign-form\sign-form.component.html">User</a></li>
-      </div>
-    </ul>
-  </nav>
-</body>
+  .dropdown li a {
+	color: #fff; /* Change this to your desired text color */
+  }
 
-</html>
+  /* Styling the hamburger menu (uncomment this if you want to use the checkbox hack for a responsive menu) */
+  /*
+  .hamburger {
+	display: none;
+  }
+
+  #checkbox_toggle {
+	display: none;
+  }
+
+  @media (max-width: 768px) {
+	.nav-links {
+	  display: none;
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+
+	.nav-links li {
+	  margin: 10px 0;
+	}
+
+	.hamburger {
+	  display: block;
+	  font-size: 24px;
+	  cursor: pointer;
+	}
+
+	#checkbox_toggle:checked ~ .nav-links {
+	  display: flex;
+	}
+  }
+  */
