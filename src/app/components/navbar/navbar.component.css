@@ -1,91 +1,38 @@
-/* navbar.component.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-  }
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
 
-  /* Navbar styles */
-  .navbar {
-	background-color: #333; /* Change this to your desired background color */
-	padding: 10px 20px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
+.nav-links {
+    list-style: none;
+    display: flex;
+}
 
-  /* Logo styles */
-  .logo {
-	color: #fff; /* Change this to your desired text color */
-	font-size: 24px;
-  }
+.nav-links li {
+    margin-right: 20px;
+}
 
-  /* Navigation links styles */
-  .nav-links {
-	list-style: none;
-	display: flex;
-  }
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
 
-  .nav-links li {
-	margin-right: 20px;
-  }
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+}
 
-  .nav-links li a {
-	text-decoration: none;
-	color: #fff; /* Change this to your desired text color */
-	font-size: 16px;
-  }
-
-  /* Dropdown menu styles */
-  .dropdown {
-	display: none;
-	position: absolute;
-	background-color: #333; /* Change this to your desired background color */
-	padding: 10px;
-  }
-
-  .services:hover .dropdown {
-	display: block;
-  }
-
-  .dropdown li {
-	margin: 5px 0;
-  }
-
-  .dropdown li a {
-	color: #fff; /* Change this to your desired text color */
-  }
-
-  /* Styling the hamburger menu (uncomment this if you want to use the checkbox hack for a responsive menu) */
-  /*
-  .hamburger {
-	display: none;
-  }
-
-  #checkbox_toggle {
-	display: none;
-  }
-
-  @media (max-width: 768px) {
-	.nav-links {
-	  display: none;
-	  flex-direction: column;
-	  align-items: flex-start;
-	}
-
-	.nav-links li {
-	  margin: 10px 0;
-	}
-
-	.hamburger {
-	  display: block;
-	  font-size: 24px;
-	  cursor: pointer;
-	}
-
-	#checkbox_toggle:checked ~ .nav-links {
-	  display: flex;
-	}
-  }
-  */
+.services:hover .dropdown {
+    display: block;
+}
