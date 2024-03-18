@@ -1,0 +1,18 @@
+/* Your CSS styles here */
+.alert {
+	padding: 1rem;
+	border-radius: 0.25rem;
+	border: 1px solid #e2e8f0;
+	background-color: #f7fafc;
+	display: flex;
+	align-items: center;
+  }
+
+  .icon {
+	fill: none;
+	stroke-width: 2;
+	stroke: currentColor;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-right: 0.5rem;
+  }

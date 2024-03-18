@@ -1,24 +1,25 @@
 <p>navbar works!</p>
+<!-- <link rel="stylesheet" href="navbar.component.css"> -->
 <app-navbar>
-	<nav class="navbar">
+	<div class="navbar">
 		<!-- LOGO -->
 		<div class="logo">Resume.</div>
 
 		<!-- NAVIGATION MENU -->
 		<ul class="nav-links">
-			<li><a href="/">Home</a></li>
-			<li><a href="/">About</a></li>
+			<li><a routerLink="src\app\components\profile-form\profile-form.component.html">Home</a></li>
+			<li><a routerLink="">About</a></li>
 			<li class="services">
-				<a href="/">Skills</a>
+				<a routerLink="">Skills</a>
 				<!-- DROPDOWN MENU -->
 				<ul class="dropdown">
-					<li><a href="">Manual</a></li>
-					<li><a href="/">Assessment</a></li>
+					<li><a routerLink="src\app\components\manual-form\manual-form.component.html">Manual</a></li>
+					<li><a routerLink="src\app\components\assessment-form\assessment-form.component.html">Assessment</a></li>
 				</ul>
 			</li>
-			<li><a href="/">Contact</a></li>
-			<li><a for="">User</a></li>
+			<li><a routerLink="src\app\components\contact-form\contact-form.component.html">Contact</a></li>
+			<li><a routerLink="src\app\components\sign-form\sign-form.component.html">User</a></li>
 		</ul>
-	</nav>
+	</div>
 
 </app-navbar>
