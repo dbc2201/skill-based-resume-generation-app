@@ -1,25 +1,15 @@
-<p>navbar works!</p>
-<!-- <link rel="stylesheet" href="navbar.component.css"> -->
-<app-navbar>
-	<div class="navbar">
-		<!-- LOGO -->
-		<div class="logo">Resume.</div>
-
-		<!-- NAVIGATION MENU -->
-		<ul class="nav-links">
-			<li><a routerLink="src\app\components\profile-form\profile-form.component.html">Home</a></li>
-			<li><a routerLink="">About</a></li>
-			<li class="services">
-				<a routerLink="">Skills</a>
-				<!-- DROPDOWN MENU -->
-				<ul class="dropdown">
-					<li><a routerLink="src\app\components\manual-form\manual-form.component.html">Manual</a></li>
-					<li><a routerLink="src\app\components\assessment-form\assessment-form.component.html">Assessment</a></li>
-				</ul>
-			</li>
-			<li><a routerLink="src\app\components\contact-form\contact-form.component.html">Contact</a></li>
-			<li><a routerLink="src\app\components\sign-form\sign-form.component.html">User</a></li>
-		</ul>
+<!-- navbar.component.html -->
+<nav class="navbar">
+	<div class="container">
+	  <ul class="navbar-menu">
+		<li class="navbar-item">
+		  <a class="navbar-link" routerLink="profile">Home</a>
+		  <a class="navbar-link" routerLink="manual">manual</a>
+		  <a class="navbar-link" routerLink="assessment">Assessment</a>
+		  <a class="navbar-link" routerLink="contact">Contact</a>
+		  <a class="navbar-link" routerLink="login">login</a>
+		</li>
+	  </ul>
 	</div>
-
-</app-navbar>
+	<router-outlet></router-outlet>
+  </nav>
