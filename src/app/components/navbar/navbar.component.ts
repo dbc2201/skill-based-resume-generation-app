@@ -18,6 +18,11 @@ export class NavbarComponent {
 		{ name: 'Contact', link: '/contact' }
 	  ];
 	  openNav: boolean = false;
+	  isDropdownOpen: boolean = false;
+
+  toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
 
 
 }

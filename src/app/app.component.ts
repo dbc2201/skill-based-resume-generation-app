@@ -19,6 +19,6 @@ import { DemoFormComponent } from "./components/demo-form/demo-form.component";
 export class AppComponent {
   title = 'skill-based-resume-generation-app';
   constructor(){
-    alert("Useful for Work-Profession");
+    // alert("Useful for Work-Profession");
   }
 }

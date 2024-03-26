@@ -3,13 +3,24 @@
 	<div class="container">
 	  <ul class="navbar-menu">
 		<li class="navbar-item">
-		  <a class="navbar-link" routerLink="profile">Home</a>
-		  <a class="navbar-link" routerLink="manual">manual</a>
-		  <a class="navbar-link" routerLink="assessment">Assessment</a>
-		  <a class="navbar-link" routerLink="contact">Contact</a>
-		  <a class="navbar-link" routerLink="login">login</a>
+		  <div class="home">
+			<a class="navbar-link" routerLink="profile">Home</a>
+		  </div>
+		  <div class="profile">
+			<a class="navbar-link" routerLink="resume">Create Resume</a>
+		  </div>
+		  <div class="update">
+			<a class="navbar-link" routerLink="update">Updatation</a>
+		  </div>
+		  <div class="contact">
+			<a class="navbar-link" routerLink="contact">Contact</a>
+		  </div>
+		  <div class="login">
+			<a class="navbar-link" routerLink="login">login</a>
+		  </div>
 		</li>
 	  </ul>
 	</div>
-	<router-outlet></router-outlet>
+
   </nav>
+  <router-outlet></router-outlet>

@@ -1,0 +1,60 @@
+form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+
+  }
+  *{
+	background-image: url("https://openverse.org/image/4328106f-1f73-4ec3-af18-ba29c157340b?q=background");
+  }
+  .form-content{
+	width: 100%;
+	display: contents;
+  }
+
+  input[type="text"] {
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	padding: 10px;
+	flex-grow: 1;
+	margin-right: 10px;
+  }
+
+  .add-link-button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+
+  .add-link-button:hover {
+	background-color: #3e8e41;
+  }
+  form label {
+	font-size: larger;
+	width: 50%;
+	margin: 1rem 0;
+	display: block;
+  }
+
+  form input {
+	width: 40%;
+	padding: 0.5rem;
+	margin: 0.2rem;
+  }
+
+  form input.invalid-email {
+	border-color: red;
+  }
+
+  form .error-message {
+	color: red;
+	margin-left: 10%;
+  }
+
+  form .social-label {
+	width: 100%;
+	margin: 1rem 0;
+  }

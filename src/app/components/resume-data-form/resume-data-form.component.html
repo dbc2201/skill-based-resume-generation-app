@@ -1,0 +1,67 @@
+<!-- <p>resume-data-form works!</p> -->
+<h1>Please Enter your Information.</h1>
+<!-- [formGroup]="personalDetails"  -->
+<link rel="stylesheet" href="resume-data-form.component.css">
+<form (ngSubmit)="submitForm()">
+	<div class="form-content">
+	  <label>
+		First Name:
+		<input type="text" formControlName="firstName" required />
+		<span class="error-message" *ngIf="firstName.errors?.required && submitted">First Name is required.</span>
+	  </label>
+	  <label>
+		Last Name:
+		<input type="text" formControlName="lastName" required />
+		<span class="error-message" *ngIf="lastName.errors?.required && submitted">Last Name is required.</span>
+	  </label>
+	  <label>
+		Job Title:
+		<input type="text" formControlName="jobTitle" />
+	  </label>
+	  <label>
+		Email Address:
+		<input type="email" formControlName="email" required />
+		<span class="error-message" *ngIf="email.errors?.required && submitted">Email Address is required.</span>
+		<span class="error-message" *ngIf="email.invalid && email.errors?.email && submitted">Invalid email address.</span>
+	  </label>
+	  <label>
+		City:
+		<input type="text" formControlName="city" required />
+		<span class="error-message" *ngIf="city.errors?.required && submitted">City is required.</span>
+	  </label>
+	  <label>
+		State:
+		<input type="text" formControlName="state" required />
+		<span class="error-message" *ngIf="state.errors?.required && submitted">State is required.</span>
+	  </label>
+	  <label>
+		Country:
+		<input type="text" formControlName="country" required />
+		<span class="error-message" *ngIf="country.errors?.required && submitted">Country is required.</span>
+	  </label>
+	  <label>
+		Address:
+		<input type="text" formControlName="address" required />
+		<span class="error-message" *ngIf="address.errors?.required && submitted">Address is required.</span>
+	  </label>
+	  <label>
+		Zip Code:
+		<input type="number" formControlName="zipCode" required />
+		<span class="error-message" *ngIf="zipCode.errors?.required && submitted">Zip Code is required.</span>
+	  </label>
+	  <label>
+		Phone:
+		<input type="tel" formControlName="phone" required />
+		<span class="error-message" *ngIf="phone.errors?.required && submitted">Phone is required.</span>
+	  </label>
+	  <label class="social-label">
+		<div class="input-container">
+			<!-- <input type="text" [(ngModel)]="linkInput" placeholder="Enter link here" /> -->
+			<button class="add-link-button" (click)="addLink()">Add Link</button>
+		  </div>
+		<!-- + Add Social Links: -->
+	  </label>
+	  <button type="submit">Submit</button>
+	  <button type="cancel">Cancel</button>
+	</div>
+  </form>
