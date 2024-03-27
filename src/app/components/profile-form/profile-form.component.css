@@ -1,0 +1,54 @@
+.profile-sub {
+	background-image: url("https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__480.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.bullet-point {
+	color: white;
+	font-size: 40px;
+}
+
+.effectpoint {
+	font-family: Cuckoo;
+}
+.line1 p{
+	width: 15%;
+}
+.line1 {
+	font-size: 40px;
+	color: black;
+	display: flex;
+	align-items: center;
+}
+
+.line2 {
+	color: black;
+	font-size: 20px;
+
+}
+
+.p-sub3 {
+	background-color: white;
+	font-size: 40px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.p-sub3 img {
+	background-color: white;
+	width: 10%;
+	height: 5%;
+}
+
+.navbar{
+	color: white;
+}

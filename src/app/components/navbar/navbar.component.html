@@ -1,1 +1,29 @@
-<p>navbar works!</p>
+<!-- navbar.component.html -->
+<nav class="navbar">
+	<div class="container">
+	  <ul class="navbar-menu">
+		<li class="navbar-item">
+		  <div class="home">
+			<a class="navbar-link" routerLink="profile">Home</a>
+		  </div>
+		  <div class="profile">
+			<a class="navbar-link" routerLink="resume">Demo</a>
+		  </div>
+		  <div class="profile">
+			<a class="navbar-link" routerLink="resume">Create Resume</a>
+		  </div>
+		  <div class="update">
+			<a class="navbar-link" routerLink="update">Updatation</a>
+		  </div>
+		  <div class="contact">
+			<a class="navbar-link" routerLink="contact">Contact</a>
+		  </div>
+		  <div class="login">
+			<a class="navbar-link" routerLink="login">login</a>
+		  </div>
+		</li>
+	  </ul>
+	</div>
+
+  </nav>
+  <router-outlet></router-outlet>

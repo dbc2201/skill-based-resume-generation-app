@@ -1,0 +1,17 @@
+.navbar-link {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 25px;
+	transition: background-color 0.3s ease;
+  }
+
+/* .navbar-link:hover {
+	background-color: #cfcfcf;
+  } */
+button{
+	background-color: unset;
+	margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}

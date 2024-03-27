@@ -1,0 +1,35 @@
+.demo-form {
+    padding: 20px;
+  }
+
+  .template-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .template {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .template button {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+  }
+
+  .template-image {
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .template-image:hover {
+    transform: scale(1.1);
+  }
