@@ -1,12 +1,21 @@
+.resume-data{
+	background-image: url("https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
 form {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 2rem;
+	margin-left: 2rem;
 
   }
-  *{
+  /* *{
 	background-image: url("https://openverse.org/image/4328106f-1f73-4ec3-af18-ba29c157340b?q=background");
-  }
+  } */
   .form-content{
 	width: 100%;
 	display: contents;
@@ -42,7 +51,7 @@ form {
   form input {
 	width: 40%;
 	padding: 0.5rem;
-	margin: 0.2rem;
+	margin: 1.0rem;
   }
 
   form input.invalid-email {
@@ -57,4 +66,10 @@ form {
   form .social-label {
 	width: 100%;
 	margin: 1rem 0;
+  }
+
+  .form-content button{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
   }

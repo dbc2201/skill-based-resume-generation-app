@@ -11,6 +11,7 @@ import { ForgotFormComponent } from './components/forgot-form/forgot-form.compon
 import { MainPageFormComponent } from './components/main-page-form/main-page-form.component';
 import { ResumeDataFormComponent } from './components/resume-data-form/resume-data-form.component';
 import { ErrorFormComponent } from './components/error-form/error-form.component';
+import { DemoFormComponent } from './components/demo-form/demo-form.component';
 
 export const routes: Routes = [
 	{path:'',component:ProfileFormComponent},
@@ -23,7 +24,8 @@ export const routes: Routes = [
 	{path:'forgot',component:ForgotFormComponent},
 	{path:'main-page',component:MainPageFormComponent},
 	{path:'resume',component:ResumeDataFormComponent},
-	{path:'error',component:ErrorFormComponent}
+	{path:'error',component:ErrorFormComponent},
+	{path:'demo',component:DemoFormComponent}
 ];
 @NgModule({
 imports: [RouterModule.forRoot(routes)],
